@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 html {
-  background-color: #075a45;
+  color-scheme: light dark;
+  background: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -12,10 +13,15 @@ html {
   
 }
 body {
-  color: #060606;
-  font-family: ‘Roboto’,‘Helvetica Neue’, Helvetica, Arial, sans-serif;
+  color: #bca8a8;
+  /* width: min(100ch, 100% - 4rem); */
+  margin: 0;
+  margin-inline: auto;
+  font-family: system-ui;
   font-style: normal;
   font-weight: 400;
+  font-size: 1.125;
+  line-height: 1.5;
   letter-spacing: 0;
   padding: 1rem;
   text-rendering: optimizeLegibility;
@@ -23,6 +29,94 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: “liga” on;
 }
+
+.body--travelers{
+  color: #bca8a8;
+  width: 100%;
+  margin: 0;
+  margin-inline: auto;
+  font-family: system-ui;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125;
+  line-height: 1.5;
+  letter-spacing: 0;
+  padding: 1rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: “liga” on;
+}
+
+.navBar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.magic-body{
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.magic-card::before,
+.magic-card::after {
+  content: "";
+  position: absolute;
+  inset: -.5rem;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-3),
+    var(--clr-4),
+    var(--clr-5),
+    var(--clr-4),
+    var(--clr-3));
+  border-radius: inherit;
+  animation: rotation 20s linear infinite;
+}
+
+.magic-card::after {
+  filter:blur(3.5rem)
+}
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotation {
+  0% { --gradient-angle: 0deg; }
+  100% { --gradient-angle: 360deg: }
+}
+:root {
+  --clr-1: #052b2f;
+  --clr-2: #073438;
+  --clr-3: #0e4b50;
+  --clr-4: #2d8f85;
+  --clr-5: #637c54;
+}
+
+.magic-card{
+  aspect-ratio: 1 / 1.5;
+  background: var(--clr-1);
+  border-radius: 0.5rem;
+  position: relative;
+  width: 40vh;
+
+
+}
+
+.contact-form{
+  display: grid;
+  gap: 1.25rem;
+}
+
+.form-group{
+  display: grid;
+}
+
 #main-header{
   display: block;
   margin-left: auto;
@@ -32,12 +126,64 @@ body {
   height: 90px;
   width: 330px;
 }
+
+.main-layout1{
+min-height: 100vh;
+min-height: 100dvh;
+display: grid;
+grid-template-rows: 
+  auto 
+  1fr 
+  auto;
+border: 3px solid rgb(165, 165, 225);
+background: url(assets/Sacred-Seals.jpg);
+background-position: center;
+background-size: 70%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.main-layout2{
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: 
+    auto 
+    1fr 
+    auto;
+  border: 3px solid rgb(165, 165, 225);
+  background: url(assets/octopath-one-group.jpg);
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main-layout3 {  
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: 
+    auto 
+    1fr 
+    auto;
+  border: 3px solid rgb(165, 165, 225);
+  background: url(assets/octopath-two-group.jpg);
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 .centered {
   text-align: center;
 }
 
 .originLand {
   text-align: center;
+}
+
+.video-layout {
+  display: inline-flex;
 }
 
 .search {
@@ -51,7 +197,7 @@ body {
 .searchTerm {
   text-align: center;
   width: 100%;
-  border: 3px solid green;
+  border: 3px solid rgb(165, 165, 225);
   padding: 5px;
   height: 3rem;
   border-radius: 5px;
@@ -61,8 +207,15 @@ body {
 img {
   height: 300px;
   width: 300px;
-  vertical-align: middle;
+  max-width: 100%;
+  display: block;
 }
+
+video {
+  max-width: 100%;
+  display: block;
+}
+
 .btn {
   background-color: white;
   color: #696969;
@@ -109,7 +262,7 @@ img {
   filter: contrast(100%);
 }
 .card__title {
-  color: #111111;
+  color: #f2ebeb;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.25rem;
   font-weight: 300;

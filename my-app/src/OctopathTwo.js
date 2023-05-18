@@ -8,12 +8,14 @@ function OctopathTwoContainer({travelers}){
     })
     
     return (
-      <div>
+      <body className="body--travelers">
+        <div className="main-layout3">
             <h1 className="originLand">In The Land Of Solistia! The Paths Intertwine Again! </h1>
             <ul className="cards">
             {traveler}
             </ul>
-      </div>
+        </div>
+      </body>
     )
 }
 

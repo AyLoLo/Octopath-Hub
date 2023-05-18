@@ -8,12 +8,14 @@ function TravelersContainer({travelers}) {
     })
 
   return (
-    <div>
-      <h1 className="originLand">From Across The Lands! They Carve Their Own Path!</h1>
-      <ul className="cards">
-        {traveler}
-      </ul>
-    </div>
+    <body className="body--travelers">
+     <div className="main-layout1">
+        <h1 className="originLand">From Across The Lands! They Carve Their Own Path!</h1>
+        <ul className="cards">
+          {traveler}
+        </ul>
+      </div>
+    </body>
   );
 }
 
