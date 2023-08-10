@@ -91,11 +91,11 @@ body {
   100% { --gradient-angle: 360deg: }
 }
 :root {
-  --clr-1: #052b2f;
-  --clr-2: #073438;
-  --clr-3: #0e4b50;
-  --clr-4: #2d8f85;
-  --clr-5: #637c54;
+  --clr-1: #144b52;
+  --clr-2: #19def0;
+  --clr-3: #3ed9e7;
+  --clr-4: #247ab8;
+  --clr-5: #112c90;
 }
 
 .magic-card{
@@ -123,8 +123,8 @@ body {
   margin-right: auto;
   opacity: 80%;
   float: top;
-  height: 90px;
-  width: 330px;
+  height: 300px;
+  width: 500px;
 }
 
 .main-layout1{

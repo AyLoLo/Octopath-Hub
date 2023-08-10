@@ -19,7 +19,7 @@ function App() {
     sprite: "https://thumbs.gfycat.com/TestyJauntyClingfish-max-1mb.gif",
     image: "https://files.cults3d.com/uploaders/16165612/illustration-file/11e78db9-d2ae-4d38-a3fe-e7cfebbb4eb4/Psyduck01.jpg",
     quote: "....?",
-    bio: "It's behavior relates mostly to the feelings of a typical FlatIron student",
+    bio: "It's behavior relates mostly to the feelings of a typical adult",
     job: "Trying",
     game: "Champions Of The Continent"
   })

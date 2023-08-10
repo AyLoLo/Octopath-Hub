@@ -35,7 +35,7 @@ function TravelerForm({addTraveler, updateFormData}){
                     </div>
                     <div className="form-group">
                         <label for="travelerjob">Traveler Job:</label><br></br>
-                        <input onChange={updateFormData} type="text" id="bio" name="travelerjob"></input><br></br>
+                        <input onChange={updateFormData} type="text" id="job" name="travelerjob"></input><br></br>
                     </div>
                         <button type="submit">Add Traveler</button>
                 </form>}

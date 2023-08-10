@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./assets/Octopath-Traveler-Logo.jpg";
+import logo from "./assets/octopath_emblem_white.jpg";
 
 function Header() {
     return (
